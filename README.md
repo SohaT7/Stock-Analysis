@@ -44,7 +44,7 @@ The Total Daily Volume, Starting Price, and Ending Price were extracted and disp
 
 ![Original Code](https://github.com/SohaT7/Stock-Analysis/blob/main/Code_Original%20Code.png)
 
-In the refactored code, we created three additional arrays for Total Daily Volumes, Starting Prices, and Ending Prices. This helps run the code through all the rows in the dataset only once. In the one (and only) run through the loop, the tickerIndex updates itself to the next one when it reaches the new ticker's rows in the dataset. In addition, when within a particular ticker's rows, the code collects and calculates values for Total Daily Volumes, Starting Prices and Ending Prices and stores them in their respective arrays. All this aids in running through the code once and conducting all the operations. 
+In the refactored code, we created three additional arrays for Total Daily Volumes, Starting Prices, and Ending Prices. This helps run the code through all the rows in the dataset only once. In the one run through the loop, the variable tickerIndex updates itself to the next numeric value and thus updates the ticker value to the next one when it reaches the new ticker's rows in the dataset. In addition, when within a particular ticker's rows, the code collects and calculates values for Total Daily Volumes, Starting Prices and Ending Prices and stores them in their respective arrays. All this aids in running through the code once and conducting all the operations. 
 
 ![Refactored Code](https://github.com/SohaT7/Stock-Analysis/blob/main/Code_Refactored%20Code.png)
 
@@ -53,3 +53,6 @@ Later, the values in these arrays (tickers, total daily volumes, startign prices
 ![Refactored_Output](https://github.com/SohaT7/Stock-Analysis/blob/main/Code_Refactored_Output%20Arrays.png)
 
 ## Summary
+Refactoring code makes the code more efficient i.e. allows the code to have an even shorter run time, while keeping its functionality the same as before. It makes the code more efficient by reducing the number of coded lines, helping use up less space in the memory, or by refining the code's logic even further. Refactoring the code can make it more simple and easy to use, and more flexible even so other functionalities may be added with relative ease into it. The disadvantages of refactoring code include it being a potentially time-consuming process. It can also lead to the code becoming riddled with bugs in the process, which in turn may use up considerable time to debug and solve. 
+
+While refactoring our original code, we ended up making it more efficient (the run time has decreased from around 0.62 seconds to 0.13 seconds) by breaking it down into more logical, neat, and concise steps: the code has to run through the dataset for a reduced number of times now and that saves time. A common element - the variable tickerIndex - is used to refer to all the arrays (including additional ones) we created which makes the code more neat and logical too. While refactoring the code, it took some time to debug the bugs that appeared but once done, the code is highly efficient! 
