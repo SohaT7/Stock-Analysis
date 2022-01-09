@@ -40,7 +40,7 @@ The difference in the original code and the refactored code is that in the forme
 
 ![Array for tickers](https://github.com/SohaT7/Stock-Analysis/blob/main/Code_Initializing%20Array.png)
 
-The Total Daily Volume, Starting Price, and Ending Price were extracted for each stock in each run through the loop. 
+The Total Daily Volume, Starting Price, and Ending Price were extracted and displayed as output for each stock in each run through the loop. 
 
 ![Original Code](https://github.com/SohaT7/Stock-Analysis/blob/main/Code_Original%20Code.png)
 
