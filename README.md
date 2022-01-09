@@ -32,13 +32,24 @@ The execution time for the refactored code by comparison, is shown below:
 ![Time_Refactored Code_2017](https://github.com/SohaT7/Stock-Analysis/blob/main/VBA_Challenge_2017.png)
 ![Time_Refactored Code_2018](https://github.com/SohaT7/Stock-Analysis/blob/main/VBA_Challenge_2018.png)
 
-The refactored code runs faster than the original code. The excution time for the original code come sout to be around 0.6015625 seconds for both the year 2017 analysis run and the 2018 analysis run. However, the execution time for running the refactored code is shorter: it is around 0.1328125 seconds for both years' analysis run. However, the code (original as well as refactored) was run multiple times for the year 2017 and 2018 in order to get average or stable values. The run time values stabilize after a couple times or so, except for the refacotred code run on 2017 dataset which on a subsequent run gave an even shorter run time value of 0.125 seconds. This discrepancy can occur because on the first run especially the computer has to allocate resources to run the macro which takes longer. However, once these resources have been allocated, they can readily be used and thus give us a stable (and smaller) subsequent run time value.
+The refactored code runs faster than the original code. The execution time for the original code come sout to be around 0.6015625 seconds for both the year 2017 analysis run and the 2018 analysis run. However, the execution time for running the refactored code is shorter: it is around 0.1328125 seconds for both years' analysis run. However, as the code (original as well as refactored) was run multiple times for the year 2017 and 2018 in order to get average or stable values, the run time values stabilize after a couple times or so, except for the refactored code run on 2017 dataset which on a subsequent run gave an even shorter run time value of 0.125 seconds. This discrepancy can occur because on the first run especially the computer has to allocate resources to run the macro which takes longer. However, once these resources have been allocated, they can readily be used and thus give us a stable (and smaller) subsequent run time value. It is to be noted that therefactored code also includes the code for formatting within and it still runs faster than the original code (which does not contain the code portion for formatting).
 
 ![Time_Refactored Code_2017_2](https://github.com/SohaT7/Stock-Analysis/blob/main/ElapseTime_RefactoredCode_2017_2.png)
 
-The difference in the original code and the refactored code is that in the former, we created an array of tickers for the 12 stocks and then for each ticker/stock looped through all the rows in our dataset to get the Total Daily Volume, Starting Price, and Ending Price (the latter two were used to then calculate the Yearly Return before dislaying it). This means that the code ran through the entire code 12 times, one time each for each ticker/stock in our dataset.
+The difference in the original code and the refactored code is that in the former, we used the array of 12 tickers (for the 12 stocks) created to loop through all the rows in our dataset 12 times - each one run corresponds to one loop and by the end of the loop, the ticker was updated to the next one, so on and so forth. 
 
-The refactored code, on the other hand, runs through the entire code only once, thereby cutting down on the execution time considerably. It does so by creating three other arrays in addition to the array for tickers (arrays for total daily volumes, starting prices, and ending prices). As it runs through all the rows in the dataset, it keeps extracting and calculating the needed values and placing them in their respective arrays. After the one and only run, it displays the values from the arrays as is, except for those in the arrays for starting prices and ending prices, which it does a calcualtion upon before finally dispalying the Yearly Return value (shown below in the code). 
+![Array for tickers](https://github.com/SohaT7/Stock-Analysis/blob/main/Code_Initializing%20Array.png)
 
-In the refactored code, creating a variable called tickerIndex and increasing its value by 1 
+The Total Daily Volume, Starting Price, and Ending Price were extracted for each stock in each run through the loop. 
+
+![Original Code](https://github.com/SohaT7/Stock-Analysis/blob/main/Code_Original%20Code.png)
+
+In the refactored code, we created three additional arrays for Total Daily Volumes, Starting Prices, and Ending Prices. This helps run the code through all the rows in the dataset only once. In the one (and only) run through the loop, the tickerIndex updates itself to the next one when it reaches the new ticker's rows in the dataset. In addition, when within a particular ticker's rows, the code collects and calculates values for Total Daily Volumes, Starting Prices and Ending Prices and stores them in their respective arrays. All this aids in running through the code once and conducting all the operations. 
+
+![Refactored Code](https://github.com/SohaT7/Stock-Analysis/blob/main/Code_Refactored%20Code.png)
+
+Later, the values in these arrays (tickers, total daily volumes, startign prices, and ending prices) are used to produce and display the output in the sheet. 
+
+![Refactored_Output](https://github.com/SohaT7/Stock-Analysis/blob/main/Code_Refactored_Output%20Arrays.png)
+
 ## Summary
