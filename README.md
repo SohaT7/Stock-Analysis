@@ -2,7 +2,7 @@
 
 ## Overview of the Project
 ### Background of the Project
-The purpose of this project initially was to help Steve's parents decide whether they would like to invest in the DQ stock (a green energy stock they were interested in). The performance of the DQ stock based on the yearly return in 2018 was in the negative (it fell by 62.6%), and so investing in that was out of the question. The project was thus expanded to include gauging the performace of the other 11 stocks as well, from which Steve's parents can then decide wherein to invest. 
+The purpose of this project [VBA_Challenge.xlsm](https://github.com/SohaT7/Stock-Analysis/blob/main/VBA_Challenge.xlsm) initially was to help Steve's parents decide whether they would like to invest in the DQ stock (a green energy stock they were interested in). The performance of the DQ stock based on the yearly return in 2018 was in the negative (it fell by 62.6%), and so investing in that was out of the question. The project was thus expanded to include gauging the performace of the other 11 stocks as well, from which Steve's parents can then decide wherein to invest. 
 ### Purpose and Description of the Project
 ![Input Box](https://github.com/SohaT7/Stock-Analysis/blob/main/InputBox_YearValue.png)
 
