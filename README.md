@@ -1,9 +1,13 @@
-# Results from the Stock Analysis
-
-## Overview of the Project
-### Background of the Project
+# Stock Analysis
+## Overview of the Analysis
+### Purpose:
 The purpose of this project [VBA_Challenge.xlsm](https://github.com/SohaT7/Stock-Analysis/blob/main/VBA_Challenge.xlsm) initially was to help Steve's parents decide whether they would like to invest in the DQ stock (a green energy stock they were interested in). The performance of the DQ stock based on the yearly return in 2018 was in the negative (it fell by 62.6%), and so investing in that was out of the question. The project was thus expanded to include gauging the performace of the other 11 stocks in 2018 as well, from which Steve's parents can then decide wherein to invest. 
-### Purpose and Description of the Project
+
+### About the Dataset:
+
+### Tools Used:
+
+### Description:
 ![Input Box](https://github.com/SohaT7/Stock-Analysis/blob/main/InputBox_YearValue.png)
 
 This project, in its final form, analyzes the performance of multiple stocks in the years 2017 and 2018. The code takes in the year value we are looking to run the analysis for, and then calculates the Total Daily Volume (the frequency with which a stock is shared in a given day) and the Yearly Return (the percentage change in the value of the stock from the beginning to the end of the year) for all the 12 stocks in that year. 
@@ -12,7 +16,7 @@ For this project, a code was written which was then refactored to help run more 
 ![Initial](https://github.com/SohaT7/Stock-Analysis/blob/main/Initial.png)
 
 ## Results
-### Comparing the Stock Performance between 2017 and 2018
+### (a) Comparing the Stock Performance between 2017 and 2018:
 ![Output 2017](https://github.com/SohaT7/Stock-Analysis/blob/main/Output_OriginalCode_2017.png)
 
 ![Output 2018](https://github.com/SohaT7/Stock-Analysis/blob/main/Output_OriginalCode_2018.png)
@@ -21,7 +25,7 @@ Most of the stocks in 2017 had a positive performance i.e. a positive yearly ret
 
 By comparison, most of the stocks in 2018 performed in the negative, i.e. the yearly return for most stocks is in the negative. There is a positive return on only ENPH (81.9%) and RUN (84.0%). The lowest performing stocks in 2018 were DQ which fell by 62.6%, and closely followed by JKS which fell by 60.5%. There are 3 other stocks that fell by more than 20% (FSLR, HASI, SPWR). The total daily volume again, is not reflective of the value of the stock like yearly return is. Even though the total daily volume for ENPH is highest at $607,473,500 and so is its yearly return at 81.9%, this pattern does not follow for other stocks: the stock with the second highest total daily volume SPWR ($538,024,300) has the third lowest return that year (-44.6%). 
 
-### Execution times of the Original script and the Refactored script
+### (b) Execution times of the Original script and the Refactored script:
 The execution time for the original code is shown below:
 
 ![Time_Orinigal Code_2017](https://github.com/SohaT7/Stock-Analysis/blob/main/ElapseTime_OriginalCode_2017.png)
@@ -56,3 +60,7 @@ Later, the values in these arrays (tickers, total daily volumes, starting prices
 Refactoring code makes the code more efficient, i.e. allows the code to have an even shorter run time, while keeping its functionality the same as before. It makes the code more efficient by reducing the number of coded lines, helping use up less space in the memory, or by refining the code's logic even further. Refactoring the code can make it more simple and easy to use, and even more flexible so that, if need be, other functionalities may be added with relative ease into it. The disadvantages of refactoring code include it being a potentially time-consuming process. It can also lead to the code becoming riddled with bugs in the process, which in turn may use up considerable time to debug and solve. 
 
 While refactoring our original code, we ended up making it more efficient (the run time has decreased from around 0.62 seconds to 0.13 seconds) by breaking it down into more logical, neat, and concise steps: the code has to run through the dataset for a reduced number of times now and that saves time. A common element - the variable tickerIndex - is used to refer to all the arrays (including additional ones) we created which makes the code more neat and logical. While refactoring the code, it took some time to debug the bugs that appeared but once done, the code is highly efficient! 
+
+## Contact Information
+Email: st.sohatariq@gmail.com
+
