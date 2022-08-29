@@ -1,7 +1,7 @@
 # Stock Analysis
 ## Overview of the Analysis
 ### Purpose:
-The purpose of [this analysis](https://github.com/SohaT7/Stock-Analysis/blob/main/VBA_Challenge.xlsm) initially was to help the clients decide whether they would like to invest in the DQ stock (a green energy stock that interested them). The performance of the DQ stock based on the yearly return in 2018 was in the negative (it fell by 62.6%), and so investing in that was out of the question. The analysis was thus expanded to include gauging the performace of the other 11 stocks in 2018 as well, from which the clients could then decide wherein to invest. 
+The purpose of [this analysis](https://github.com/SohaT7/Stock-Analysis/blob/main/VBA_Challenge.xlsm) initially was to help the clients decide whether they would like to invest in the DQ stock (a green energy stock that interested them). The performance of the DQ stock based on the yearly return in 2018 was in the negative (it fell by 62.6%), and so investing in that was out of the question. The analysis was thus expanded to include gauging the performace of the other 11 stocks, in the years 2017 and 2018 both, from which the clients could then decide wherein to invest. 
 
 ### About the Dataset:
 The dataset comprises of the following Excel file:
